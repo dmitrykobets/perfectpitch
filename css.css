@@ -1,0 +1,66 @@
+.btn {
+    background-color: ForestGreen;  
+    border-radius: 5px;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn:focus,
+  .btn:hover {
+    background-color: rgb(30, 117, 30);
+  }
+  .btn:active {
+    background-color: darkgreen;
+  }
+
+.extra-margin {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+#starting-note-container {
+    margin-top: 10px;
+}
+.key { position: absolute; font-family: Helvetica; font-weight: 100; font-size: 12px;
+  border: 1px solid rgba(32,32,32,0.2);
+  border-radius: 0px 0px 5px 5px;
+  cursor:pointer;
+  box-shadow: 0px 5px 1px rgba(32,32,32,0.2);
+  -webkit-transition: margin 0.05s ease, background-color 0.05s ease, box-shadow 0.05s ease; }
+
+.white {
+  color: rgb(32,32,32);
+  z-index: 0;
+  text-shadow: 0px 1px 1px rgba(32,32,32,0.5);
+  width: 40px;
+  height: 200px;
+}
+.black {
+  background-color: rgb(32,32,32);
+  color: #ffffff;
+  z-index: 1;
+  text-shadow: 0px -1px 1px rgba(255,255,255,0.5);
+  width: 30px;
+  height: 120px;
+}
+.disabled {
+  background-color: rgb(201, 201, 201);
+}
+.key:not(.disabled):hover {
+  background-color: forestgreen;
+}
+.key:not(.disabled):active {
+  background-color: darkgreen;
+}
+.key:not(.disabled).used {
+  border: 1.25px solid red;
+}
+
+#grand-piano {
+  width: 840px;
+  margin: 30px auto;
+  height: 200px;
+  position: relative;
+}
